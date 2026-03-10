@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.container-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+.cabecalho {
+    background: linear-gradient(135deg, #6a0dad 0%, #8b5cf6 50%, #3b82f6 100%);
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 20px;
+}
+
+.estrelas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #fff, transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+        radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+        radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
+        radial-gradient(2px 2px at 160px 30px, #fff, transparent),
+        radial-gradient(1.5px 1.5px at 200px 50px, rgba(255,255,255,0.9), transparent);
+    background-repeat: repeat;
+    background-size: 250px 120px;
+    animation: brilhar 3s ease-in-out infinite alternate;
+}
+
+@keyframes brilhar {
+    0% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.coluna-esquerda, .coluna-direita {
+    background: #f3f4f6;
+    width: 200px;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #d1d5db;
+    flex-shrink: 0;
+}
+
+.area-central {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.area-menu {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 40px 20px;
+    border: 2px solid #e5e7eb;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #374151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo {
+    background: #ffffff;
+    flex: 1;
+    border-radius: 8px;
+    padding: 40px;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.rodape {
+    background: #1f2937;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container-principal {
+        padding: 10px;
+    }
+    
+    .conteudo-principal {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .coluna-esquerda, .coluna-direita {
+        width: 100%;
+    }
+}

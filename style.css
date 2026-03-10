@@ -1,9 +1,53 @@
-    p {
+ /*#id	#firstname	Selects the element with id="firstname"
+.class	.intro	Selects all elements with class="intro"
+*	*	Selects all elements
+element	p	Selects all <p> elements
+element,element,..	div, p	Selects all <div> elements and all <p> elements 
+WIDTH HEIGHT MAARGIN PADDINNG NAO FFUNFAM EM INLINE - funfam em inline block (quaal o sentido de usa lo
+?) 
+FLOAT POSITION GRID FLEXBOX */ 
+  
+  p {
         color: rgb(97, 34, 163);
     }
 
     .in-line {
         display:inline;
+        margin-top: 20px;
     }
 
     .block {display: block;}
+
+    .display-block { 
+        display:block;
+        height: 2200px;
+        background-color: blue;
+        border: 1px solid #000;
+    }
+
+    .display-inline {
+        display: inline;
+        background-color: green;
+        border: 1px solid #000;
+    }
+
+    .display-inline-block {
+        display: inline-block;
+        background-color: pink;
+        border: 1px solid #000;
+    }
+
+    body { 
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .imagem-flutuante {
+        float: right;
+        margin-right: 10px;
+        margin-bottom: 10px;
+            }
+
+    .subtitulo{ 
+        clear: both        ;
+    }

@@ -1,0 +1,9 @@
+    p {
+        color: rgb(97, 34, 163);
+    }
+
+    .in-line {
+        display:inline;
+    }
+
+    .block {display: block;}

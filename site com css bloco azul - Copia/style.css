@@ -1,0 +1,20 @@
+ /*#id	#firstname	Selects the element with id="firstname"
+.class	.intro	Selects all elements with class="intro"
+*	*	Selects all elements
+element	p	Selects all <p> elements
+element,element,..	div, p	Selects all <div> elements and all <p> elements 
+WIDTH HEIGHT MAARGIN PADDINNG NAO FFUNFAM EM INLINE - funfam em inline block (quaal o sentido de usa lo
+?) 
+FLOAT POSITION GRID FLEXBOX */ 
+  
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+**p 
+{
+    border: 1px; color: black;
+
+}
